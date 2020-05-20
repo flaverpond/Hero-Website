@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width"/>
+  <title>Bibliography</title>
+  
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  
+</head>
+
+<body>
+  
+<header>
+		<div class="logo" alt="RC">
+			<a href="index.html">RC</a>
+		</div>
+	<nav>
+	
+	
+	<div class="hamburguer" id="menuButton">
+		<span></span>
+	</div>
+		<div class="menu" id="menu">
+			<ul class="links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="galery.html">Galery</a></li>
+				<li><a href="documentaries.html">Documentaries</a></li>
+				<li><a href="bibliography.html">Bibliography</a></li>
+				<li><a href="news.html">News</a></li>
+				<li><a href="about.html">About me</a></li>
+			</ul>
+		</div>
+	</nav>
+</header>
+  
+<div class="container-galery">
+ <div class="timeline-slide" style="background-image: url(assets/images/bg-home.jpg);" data-year="1864">
+		<div class="timeline-slide__content">
+			<h4 class="timeline-title white">Roger <br /> Casement</h4>
+				<div class="info-home">
+					<h3 class="title-home" >
+						<span class="hover"></span>
+						<span>Bibliography</span>
+					</h3>
+						<p class="timeline-text" id="text-home">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+						</p>
+				</div>
+		</div>
+	</div>
+<!--GALERY-->
+    
+	<div class="accordion">
+		<div class="slider">
+            
+<!--IMAGES-->
+		
+			<div class="slide" style="background-image:url('assets/images/book1.jpg');" >
+				<div class="subtitle">
+					<span>16 Lives Roger Casement</span>
+					<br />
+					<br />
+					Angus Mitchel
+				</div>
+			</div>
+			
+			<div class="slide" style="background-image:url('assets/images/book2.jpg');" >
+				<div class="subtitle">
+					<span>Roger Casement´s Diaries</span>
+					<br />
+					<br />
+					Roger Sawyer
+				</div>
+			</div>
+			<div class="slide" style="background-image:url('assets/images/book3.jpg');" >
+				<div class="subtitle">
+					<span>Heart of Darkness</span>
+					<br />
+					<br />
+					Angus Mitchell
+				</div>
+			</div>
+			<div class="slide" style="background-image:url('assets/images/book4.jpg');" >
+				<div class="subtitle">
+					<span>The Dream of the Celt</span>
+					<br />
+					<br />
+					Mario Cargas Loosa
+				</div>
+			</div>
+			<div class="slide" style="background-image:url('assets/images/book5.jpg');" >
+				<div class="subtitle">
+					<span>One Bold Deed of Open Treason</span>
+					<br />
+					<br />
+					Angus Mitchell
+				</div>
+			</div>
+			<div class="slide" style="background-image:url('assets/images/book6.jpg');" >
+				<div class="subtitle">
+					<span>The Trial of Roger Casement</span>
+					<br />
+					<br />
+					Fionnuala Doran
+				</div>
+			</div>
+			<div class="slide" style="background-image:url('assets/images/book7.jpg');" >
+				<div class="subtitle">
+					<span>Roger Casement: Imperialist, Rebel, Revolutionary</span>
+					<br />
+					<br />
+					Séamas Ó Síocháin
+				</div>
+			</div>
+			<div class="slide" style="background-image:url('assets/images/book8.jpg');" >
+				<div class="subtitle">
+					<span>The Black Diaries </span>
+					<br />
+					<br />
+					Jefrey Dudgeon
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+	<script>
+	var menuButton = document.getElementById("menuButton");
+	var navMenu = document.getElementById("menu");
+
+	menuButton.addEventListener("click",function(){
+		if(navMenu.className == "open"){
+			navMenu.className = "";
+		}else{
+			navMenu.className = "open";
+		}	
+	});
+	 
+	var menuButton = document.getElementById("menuButton");
+
+	menuButton.addEventListener("click",function(){
+		if(menuButton.className == "on hamburguer"){
+			menuButton.className = "hamburguer";
+		}else{
+			menuButton.className = "on hamburguer";
+			
+		}	
+	});
+		
+	</script>
+	
+	
+</div>	
+</body>
+
+</html>

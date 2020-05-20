@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width"/>
+  <title>About Me</title>
+  
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  
+</head>
+
+<body>
+  
+<header>
+	
+	<!--MENU HAMBURGUER-->
+		<div class="logo" alt="RC">
+			<a href="index.html">RC</a>
+		</div>
+	<nav>
+	<div class="hamburguer" id="menuButton">
+		<span></span>
+	</div>
+		<div class="menu" id="menu">
+			<ul class="links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="galery.html">Galery</a></li>
+				<li><a href="documentaries.html">Documentaries</a></li>
+				<li><a href="bibliography.html">Bibliography</a></li>
+				<li><a href="news.html">News</a></li>
+				<li><a href="about.html">About me</a></li>
+			</ul>
+		</div>
+	</nav>
+</header>
+  
+<div class="container-about">
+	<div class="content-about" style="background-image: url('assets/images/about.jpg');">
+		<div class="timeline-slide__content">
+			<h4 class="timeline-title green">Flávio <br /> Santos</h4>
+		</div>
+		<div class="about-text">
+			<div class="text">
+				Designer, curious and student at Griffith College in Dublin, MSc Applied Digital Media. Looking forward to get into the digital world of UI design.<br/>
+                Professional graphic designer with over 8 years experience in Marketing and creativity, post-graduate degree in Marketing and Advertising. With many in House Design experience for large companies. <br/>
+                Flávio has worked for four years as head of a team of designers, coordinating marketing B2B, delivering all demand of creativity, art direction and adapting internal and external campaigns, also working on original concepts. Working closely with a creative team to create solutions that take all aspects of the experience into account, visual design, copywriting and organization.
+			</div>
+			<div class="social-media">
+				<a href="https://www.behance.net/Flavioas1" target="_blank"><img src="assets/images/behance.svg" alt=""></a>
+				<a href="https://flasgriffith.tumblr.com/" target="_blank"><img src="assets/images/tumblr.svg" alt=""></a>
+				<a href="https://twitter.com/flasgriffith" target="_blank"><img src="assets/images/twitter.svg" alt=""></a>
+				<a href="mailto:flavio.arsan@gmail.com" class="email-about"><img src="assets/images/email.svg" alt=""><span>flavio.arsan@gmail.com</span></a>
+			</div>
+		</div>
+	</div>
+</div>
+ 	
+
+  <script>
+      
+//		--ORIGINALSCRIPT--
+      
+	var menuButton = document.getElementById("menuButton");
+	var navMenu = document.getElementById("menu");
+
+	menuButton.addEventListener("click",function(){
+		if(navMenu.className == "open"){
+			navMenu.className = "";
+		}else{
+			navMenu.className = "open";
+		}	
+	});
+		
+//		--MENU SCRIPT OPEN--
+      
+	var menuButton = document.getElementById("menuButton");
+
+	menuButton.addEventListener("click",function(){
+		if(menuButton.className == "on hamburguer"){
+			menuButton.className = "hamburguer";
+		}else{
+			menuButton.className = "on hamburguer";
+			
+		}	
+	});
+		
+	</script>
+	
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width"/>
+  <title>Galery</title>
+  
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  
+</head>
+
+<body>
+  
+<header>
+		<div class="logo" alt="RC">
+			<a href="index.html">RC</a>
+		</div>
+	<nav>
+	
+	
+	<div class="hamburguer" id="menuButton">
+		<span></span>
+	</div>
+		<div class="menu" id="menu">
+			<ul class="links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="galery.html">Galery</a></li>
+				<li><a href="documentaries.html">Documentaries</a></li>
+				<li><a href="bibliography.html">Bibliography</a></li>
+				<li><a href="news.html">News</a></li>
+				<li><a href="about.html">About me</a></li>
+			</ul>
+		</div>
+	</nav>
+</header>
+  
+<div class="container-galery">
+ <div class="timeline-slide" style="background-image: url(assets/images/bg-home.jpg);" data-year="1864">
+		<div class="timeline-slide__content">
+			<h4 class="timeline-title white">Roger <br /> Casement</h4>
+				<div class="info-home">
+					<h3 class="title-home" >
+						<span class="hover"></span>
+						<span>Galery</span>
+					</h3>
+						<p class="timeline-text" id="text-home">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+						<br />
+						<br />
+						Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+						</p>
+				</div>
+		</div>
+	</div>
+<!--GALERY-->
+    
+	<div class="accordion">
+		<div class="slider">
+            
+<!--IMAGES-->
+		
+			<div class="slide" style="background-image:url('assets/images/bg1.jpg');" >
+				<div class="subtitle">
+					<span>The Young Roger Casement</span>
+					<br />
+					<br />
+					font:RTE Press Pack
+				</div>
+			</div>
+			
+			<div class="slide" style="background-image:url('assets/images/bg2.jpg');" >
+				<div class="subtitle">
+					<span>Casement with Mary Kingsley, Sir Claude MacDonald and wife</span>
+					<br />
+					<br />
+					font: https://www.whaleoil.co.nz/2017/09/photo-of-the-day-1168/
+				</div>
+			</div>
+			<div class="slide" style="background-image:url('assets/images/bg3.jpg');" >
+				<div class="subtitle">
+					<span>Rubber Slavery in Congo</span>
+					<br />
+					<br />
+					font:http://www.thecascadiacourier.com/2012/03/joseph-konys-bigger-more-meaninful.html
+				</div>
+			</div>
+			<div class="slide" style="background-image:url('assets/images/bg4.jpg');" >
+				<div class="subtitle">
+					<span>Casement in Putumayo - Peru</span>
+					<br />
+					<br />
+					font:https://www.irishcentral.com/roots/history/easter-rising-leader-executed-in-1916-roger-casement
+				</div>
+			</div>
+			<div class="slide" style="background-image:url('assets/images/bg5.jpg');" >
+				<div class="subtitle">
+					<span>Casement with Fritz Pincus </span>
+					<br />
+					<br />
+					font: National Library of Ireland
+				</div>
+			</div>
+			<div class="slide" style="background-image:url('assets/images/bg6.jpg');" >
+				<div class="subtitle">
+					<span>Roger Casement with John Devoy</span>
+					<br />
+					<br />
+					font: http://www.rte.ie/centuryireland/index.php/articles/the-plunkett-casement-ireland-report-what-was-it-and-why-does-it-matter
+				</div>
+			</div>
+			<div class="slide" style="background-image:url('assets/images/bg7.jpg');" >
+				<div class="subtitle">
+					<span>Casement waiting for the trial</span>
+					<br />
+					<br />
+					font: (Photo: Underwood and Underwood/CORBIS)
+				</div>
+			</div>
+			<div class="slide" style="background-image:url('assets/images/bg8.jpg');" >
+				<div class="subtitle">
+					<span>1965: President Éamon de Valera attends the funeral </span>
+					<br />
+					<br />
+					font: McMahon/Central Press/Getty Images
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+	<script>
+	var menuButton = document.getElementById("menuButton");
+	var navMenu = document.getElementById("menu");
+
+	menuButton.addEventListener("click",function(){
+		if(navMenu.className == "open"){
+			navMenu.className = "";
+		}else{
+			navMenu.className = "open";
+		}	
+	});
+	 
+	var menuButton = document.getElementById("menuButton");
+
+	menuButton.addEventListener("click",function(){
+		if(menuButton.className == "on hamburguer"){
+			menuButton.className = "hamburguer";
+		}else{
+			menuButton.className = "on hamburguer";
+			
+		}	
+	});
+		
+	</script>
+	
+	
+</div>	
+</body>
+
+</html>

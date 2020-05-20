@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width"/>
+  <title>Documentaries</title>
+  
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  
+</head>
+
+<body>
+  
+<header>
+		<div class="logo" alt="RC">
+			<a href="index.html">RC</a>
+		</div>
+	<nav>
+	<div class="hamburguer" id="menuButton">
+		<span></span>
+	</div>
+		<div class="menu" id="menu">
+			<ul class="links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="galery.html">Galery</a></li>
+				<li><a href="documentaries.html">Documentaries</a></li>
+				<li><a href="bibliography.html">Bibliography</a></li>
+				<li><a href="news.html">News</a></li>
+				<li><a href="about.html">About me</a></li>
+			</ul>
+		</div>
+	</nav>
+</header>
+  
+<div class="container-videos">
+	<div class="content-videos" style="background-image: url('assets/images/bg-home.jpg');">
+		<div class="timeline-slide__content">
+            <h4 class="timeline-title green">Documentaries</h4>
+            	<div class="info-home">
+								<h3 class="title-home" >
+									<span class="hover"></span>
+									<span>watch</span>
+								</h3>
+            	</div>
+          </div>
+	</div>
+	
+<!--VIDEO 1-->
+	
+	<div class="wrapper-videos">
+		<div class="videos">
+			<iframe width="100%" height="315" src="https://www.youtube.com/embed/PjioEolLgOM?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+		</div>
+        
+<!--VIDEO 2-->
+        
+		<div class="videos">
+			<iframe width="100%" height="315" src="https://www.youtube.com/embed/SNiHV41BKqE?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+		</div>
+        
+<!--VIDEO 3-->
+		<div class="videos">
+			<iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/dmMRVTRSakE?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+		</div>
+	</div>
+</div>
+ 	
+ 	
+  <script>
+	var menuButton = document.getElementById("menuButton");
+	var navMenu = document.getElementById("menu");
+
+	menuButton.addEventListener("click",function(){
+		if(navMenu.className == "open"){
+			navMenu.className = "";
+		}else{
+			navMenu.className = "open";
+		}	
+	});
+	 
+	var menuButton = document.getElementById("menuButton");
+
+	menuButton.addEventListener("click",function(){
+		if(menuButton.className == "on hamburguer"){
+			menuButton.className = "hamburguer";
+		}else{
+			menuButton.className = "on hamburguer";
+			
+		}	
+	});
+		
+	</script>
+	
+</body>
+
+</html>
